@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+#photo-title {
+  font-size: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 0;
+}
+
+#info-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.timer,
+.score,
+.score-change {
+  font-size: 1rem;
+  margin: 0;
+}
+
+#timer-value,
+#score-value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.timer,
+.score {
+  font-size: 1rem;
+}

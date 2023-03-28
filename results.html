@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/results.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script src="app/results.js" defer></script>
+  <script src="app/animation.js" defer></script>
+  <script src="app/carousel.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.7.0/dist/smooth-scrollbar.js"></script>
+  <title>Results</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2 class="score">Your Score: <span id="final-score"></span></h2>
+      <div id="info-header">
+        <button id="start-again" class="button" title="Learn more and increase your points with another round">New Round ↩️</button>
+        <button id="copy-results" class="button">Copy Results to 📒</button>
+      </div>
+    </header>
+    <div id="results-container">
+      <div class="carousel-nav">
+        <button id="carousel-prev" class="button">&#9664
+          <button id="carousel-next" class="button">&#9654;</button>
+        </div>
+        <div id="results"></div>
+      </div>               
+      </div>
+    </div>
+  </div>
+</body>
+</html>

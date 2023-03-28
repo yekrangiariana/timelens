@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/guess-input.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <title>Time Lens</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2 id="photo-title">Guess the Year</h2>
+            <div id="info-header">
+              <p class="timer">Time: <span id="timer-value">0</span>s</p>
+              <p class="score">Score: <span id="score-value">0</span></p>
+              <p class="score-change" id="score-change"></p>
+            </div>
+          </header>
+          <div id="photo-container"></div>
+          <section id="feedback">
+            <p id="feedback-message"></p>
+          </section>
+          <form id="guess-form">
+            <div id="guess-input-wrapper">
+              <div class="timeline-container">
+                <input type="range" id="guess-input" min="1826" max="2023">
+                <span id="guess-value" class="guess-value"></span>
+              </div>
+            </div>        
+          <div id="button-container">
+            <button id="hint-button" type="button">Hint (-500 points)</button>
+            <button id="submit-btn" type="submit">Submit ⏎</button>
+          </div>
+        </form>              
+    </div>
+    <script src="app/guess-input.js" defer></script>
+    <script src="app/game.js" defer></script>
+    <script src="app/timer.js" defer></script>
+    <script src="app/scores.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.1/papaparse.min.js" defer></script>
+</body>
+</html>
