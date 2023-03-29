@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Lens</title>
+    <link rel="stylesheet" href="style-index.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app/popups.js" defer></script>
+</head>
+<body>
+    <div class="container">
+      <img src="media/website-assets/Photo Lens Cover.jpg" alt="Photo Lens Cover">
+        <h1>Time Lens</h1>
+        <p>Welcome to Time Lens, where you will be tasked with deducing the year each photo was captured. The game unfolds over multiple rounds, accompanied by a pesky timer to keep you on your toes.</p>
+        <p>Should you feel the urge to ask for a hint, be forewarned, for it will come at the expense of your hard-earned score.</p>
+        <p>After each round, you will be presented with a gallery of the photos you encountered. Do indulge in learning more about them if you wish; we have some fascinating stories about each photo.</p>
+        <p>The game concludes when all photos have been viewed, after which you will be prompted to reset your score, allowing you to restart the game.</p>
+        <button id="start-game" onclick="location.href='game.html'">Start Game</button>        
+        <button class="rulebook-button">Open Rulebook</button>
+        <div class="scoring-popup">
+            <div class="scoring-popup-content">
+              <span class="close">&times;</span>
+              <h2>Time Lens Rulebook</h2>
+              <p>In Time Lens, players are awarded points based on their accuracy, speed and ability to maintain a streak of correct guesses. The following is a detailed breakdown of the scoring system.</p>
+              <h3>The Correct Guess</h3>
+              <p>If a player manages to guess the correct year, they are granted 1000 points as a starting reward. But, as with any find game that wants to make its rules as complicated as possible so that in appears legit, there are additional factors at play.</p>
+              <p>The Streak: Should the player be on a streak of correct guesses without using hints, they receive a bonus of 10 points multiplied by their current streak count. </p>
+              <p>Time Bonus: Proving that haste can indeed be rewarded, for each 5 seconds remaining on the clock, the player is gifted additional points.</p>
+              <h3>The Incorrect Guess</h3>
+              <p>For those unfortunate souls who fall short of the correct answer, there is still hope. Points are awarded based on how close they come to the right year.</p>
+              <p>A Mere 5 Years Off: In this case, the player receives 500 points, minus 10 points for each year they are off.</p>
+              <p>A Decade's Difference: For guesses falling within 6 to 10 years of the correct year, the player receives 450 points, minus 15 points for each year beyond the initial 5-year margin.</p>
+              <p>The 20-Year Range: If a player's guess is within 11 to 20 years of the correct answer, they receive 300 points, minus 10 points for each year beyond the initial 10-year margin.</p>
+              <p>Wildly Off: Alas, for those who are more than 20 years off, there are no points awarded. Better luck next time!</p>
+              <h3>Quick Answer Bonus:</h3>
+              <p>As a nod to those nimble-minded players, bonus points are awarded for rapid responses:</p>
+              <p>Lightning Speed: Should a player answer within 30 seconds, they receive an additional 50 points.</p>
+              <p>Merely Swift: If the player answers within 20 to 30 seconds, they are granted an extra 25 points.</p>
+              <p>As players navigate this Time Lens, their scores are calculated and displayed accordingly, reflecting the intricacies of this unique system. May fortune favour the bold, the swift and the precise!</p>
+            </div>
+          </div>  
+    </div>
+</body>
+</html>
